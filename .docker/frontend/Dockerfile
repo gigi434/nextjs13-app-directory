@@ -44,7 +44,7 @@ RUN chown -R node:node /home/node/nextjs13-app-directory/frontend/app
 #### dev ####
 # no source to be added, and assumes bind mount
 # FROM base as dev
-ENV NODE_ENV=development
+# ENV NODE_ENV=development
 # ENV PATH=/app/node_modules/.bin:$PATH
 # RUN npm install --only=development && npm cache clean --force
 # CMD ["nodemon", "index.js"]

@@ -17,3 +17,22 @@ services:
       - .env
     environment:
       - PATH:$SUPABASE_ENVIRONMENT
+    platform: linux/arm64/v8
+  example:
+    build:
+      context: .
+      dockerfile: .docker/example/Dockerfile
+    container_name: example_container
+    ports:
+      # node.js/Next.js
+      - "8070:8070"
+    volumes:
+      - "./app/example:/home/node/nextjs13-app-directory/example/app"
+    tty: true
+    stdin_open: true
+    env_file:
+      - .env
+    environment:
+      - PATH:$SUPABASE_ENVIRONMENT
+    platform: linux/arm64/v8
+    
