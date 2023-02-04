@@ -8,7 +8,6 @@ export default function NavBar() {
         <Link
           href='/'
           className='rounded bg-gray-700 px-3 py-2 text-white hover:bg-gray-500'
-          passHref
         >
           Home
         </Link>
@@ -16,7 +15,6 @@ export default function NavBar() {
         <Link
           href='/blogs'
           className='rounded bg-gray-700 px-3 py-2 text-white hover:bg-gray-500'
-          passHref
         >
           Nested Layout with Blogs
         </Link>
@@ -24,7 +22,6 @@ export default function NavBar() {
         <Link
           href='/streaming-sr'
           className='rounded bg-gray-700 px-3 py-2 text-white hover:bg-gray-500'
-          passHref
         >
           Streaming SR
         </Link>
@@ -32,7 +29,6 @@ export default function NavBar() {
         <Link
           href='/auth'
           className='rounded bg-gray-700 px-3 py-2 text-white hover:bg-gray-500'
-          passHref
         >
           Auth with CRUD
         </Link>
