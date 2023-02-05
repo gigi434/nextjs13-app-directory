@@ -2,7 +2,7 @@
 # cache our node version for installing later
 FROM node:18.3.0-slim as node
 FROM ubuntu:focal-20220531 as base
-ENV NODE_ENV=production
+# ENV NODE_ENV=production
 # Avoid running nodejs process as PID 1 (use tini)
 # You may also need development tools to build native npm addons:
 # apt-get install gcc g++ make

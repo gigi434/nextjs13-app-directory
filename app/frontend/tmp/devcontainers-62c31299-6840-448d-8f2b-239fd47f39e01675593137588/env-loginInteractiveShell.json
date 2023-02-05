@@ -1,0 +1,11 @@
+{
+	"SUPABASE_ENVIRONMENT": "/home/node/.yarn/bin",
+	"HOSTNAME": "f7c23211dd3d",
+	"REMOTE_CONTAINERS_IPC": "/tmp/vscode-remote-containers-ipc-78a121d2cafd13ad226d8311619b131cf54f9983.sock",
+	"HOME": "/home/node",
+	"LS_COLORS": "",
+	"REMOTE_CONTAINERS_SOCKETS": "[\"/tmp/vscode-ssh-auth-78a121d2cafd13ad226d8311619b131cf54f9983.sock\"]",
+	"SHLVL": "1",
+	"PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+	"_": "/usr/bin/cat"
+}

@@ -34,19 +34,19 @@ export interface Database {
       blogs: {
         Row: {
           content: string | null
-          created_at: string | null
+          created_at: string
           id: string
           title: string | null
         }
         Insert: {
           content?: string | null
-          created_at?: string | null
+          created_at?: string
           id?: string
           title?: string | null
         }
         Update: {
           content?: string | null
-          created_at?: string | null
+          created_at?: string
           id?: string
           title?: string | null
         }
