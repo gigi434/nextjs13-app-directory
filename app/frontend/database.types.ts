@@ -17,15 +17,18 @@ export interface Database {
     Functions: {
       graphql: {
         Args: {
-          operationName: string
-          query: string
-          variables: Json
-          extensions: Json
+          operationName?: string
+          query?: string
+          variables?: Json
+          extensions?: Json
         }
         Returns: Json
       }
     }
     Enums: {
+      [_ in never]: never
+    }
+    CompositeTypes: {
       [_ in never]: never
     }
   }
@@ -90,25 +93,25 @@ export interface Database {
       }
       todos: {
         Row: {
-          complete: boolean
+          completed: boolean
           created_at: string
           id: string
           title: string | null
-          user_id: string
+          user_id: string | null
         }
         Insert: {
-          complete?: boolean
+          completed?: boolean
           created_at?: string
           id?: string
           title?: string | null
-          user_id: string
+          user_id?: string | null
         }
         Update: {
-          complete?: boolean
+          completed?: boolean
           created_at?: string
           id?: string
           title?: string | null
-          user_id?: string
+          user_id?: string | null
         }
       }
     }
@@ -119,6 +122,9 @@ export interface Database {
       [_ in never]: never
     }
     Enums: {
+      [_ in never]: never
+    }
+    CompositeTypes: {
       [_ in never]: never
     }
   }
@@ -211,31 +217,40 @@ export interface Database {
     }
     Functions: {
       extension: {
-        Args: { name: string }
+        Args: {
+          name: string
+        }
         Returns: string
       }
       filename: {
-        Args: { name: string }
+        Args: {
+          name: string
+        }
         Returns: string
       }
       foldername: {
-        Args: { name: string }
+        Args: {
+          name: string
+        }
         Returns: string[]
       }
       get_size_by_bucket: {
         Args: Record<PropertyKey, never>
-        Returns: { size: number; bucket_id: string }[]
+        Returns: {
+          size: number
+          bucket_id: string
+        }[]
       }
       search: {
         Args: {
           prefix: string
           bucketname: string
-          limits: number
-          levels: number
-          offsets: number
-          search: string
-          sortcolumn: string
-          sortorder: string
+          limits?: number
+          levels?: number
+          offsets?: number
+          search?: string
+          sortcolumn?: string
+          sortorder?: string
         }
         Returns: {
           name: string
@@ -248,6 +263,9 @@ export interface Database {
       }
     }
     Enums: {
+      [_ in never]: never
+    }
+    CompositeTypes: {
       [_ in never]: never
     }
   }

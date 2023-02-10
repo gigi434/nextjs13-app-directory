@@ -14,7 +14,7 @@ export default function Auth() {
   const [password, setPassword] = useState('')
   const router = useRouter()
 
-  // ログインんボタンが押された時のコールバック関数
+  // ログインボタンが押された時のコールバック関数
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
     // ログインしていたらサインインする
@@ -29,7 +29,7 @@ export default function Auth() {
       if (error) {
         alert(error.message)
       } else {
-        router.push('/')
+        router.push('/auth/todo-crud')
       }
       // サインインしていないならサインアップをする
     } else {
